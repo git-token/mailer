@@ -26,7 +26,7 @@ function newsletterRouter() {
     var email = req.params.email;
 
     _this.unsubscribe({ email: email }).then(function (result) {
-      res.status(200).send('Unsubscribed: ' + email);
+      res.redirect('https://gittoken.io');
     }).catch(function (error) {
       console.log('error', error);
       res.status(500).send(JSON.stringify(error, null, 2));
@@ -42,7 +42,7 @@ function newsletterRouter() {
       console.log('html', html);
 
       return _this.sendMail({
-        subject: 'Thanks for Signing up for the GitToken Newsletter!',
+        subject: 'Thanks for Subscribing to the GitToken Newsletter!',
         to: email,
         html: html
       });

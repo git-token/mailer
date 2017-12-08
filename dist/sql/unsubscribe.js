@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = saveNewsletterRecipient;
+exports.default = unsubscribe;
 
 var _bluebird = require('bluebird');
 
@@ -11,7 +11,7 @@ var _bluebird2 = _interopRequireDefault(_bluebird);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function saveNewsletterRecipient(_ref) {
+function unsubscribe(_ref) {
   var _this = this;
 
   var email = _ref.email;

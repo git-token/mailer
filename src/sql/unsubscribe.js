@@ -1,6 +1,6 @@
 import Promise from 'bluebird'
 
-export default function saveNewsletterRecipient({ email }) {
+export default function unsubscribe({ email }) {
   return new Promise((resolve, reject) => {
     this.query({
         queryString: `
